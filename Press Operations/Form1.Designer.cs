@@ -32,6 +32,8 @@
             MaterialType = new Label();
             Pressure = new TextBox();
             PressureLabel = new Label();
+            checkedListBox1 = new CheckedListBox();
+            EmbossLabel = new Label();
             SuspendLayout();
             // 
             // comboBox1
@@ -71,11 +73,33 @@
             PressureLabel.TabIndex = 3;
             PressureLabel.Text = "Pressure";
             // 
+            // checkedListBox1
+            // 
+            checkedListBox1.CheckOnClick = true;
+            checkedListBox1.FormattingEnabled = true;
+            checkedListBox1.Items.AddRange(new object[] { "501", "502", "50c" });
+            checkedListBox1.Location = new Point(157, 44);
+            checkedListBox1.Name = "checkedListBox1";
+            checkedListBox1.Size = new Size(56, 58);
+            checkedListBox1.TabIndex = 4;
+            checkedListBox1.ItemCheck += checkedListBox1_ItemCheck;
+            // 
+            // EmbossLabel
+            // 
+            EmbossLabel.AutoSize = true;
+            EmbossLabel.Location = new Point(156, 23);
+            EmbossLabel.Name = "EmbossLabel";
+            EmbossLabel.Size = new Size(48, 15);
+            EmbossLabel.TabIndex = 5;
+            EmbossLabel.Text = "Emboss";
+            // 
             // BlowPressOperations
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(EmbossLabel);
+            Controls.Add(checkedListBox1);
             Controls.Add(PressureLabel);
             Controls.Add(Pressure);
             Controls.Add(MaterialType);
@@ -92,5 +116,7 @@
         private Label MaterialType;
         private TextBox Pressure;
         private Label PressureLabel;
+        private CheckedListBox checkedListBox1;
+        private Label EmbossLabel;
     }
 }
