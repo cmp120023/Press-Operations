@@ -69,9 +69,9 @@
             PressureLabel.AutoSize = true;
             PressureLabel.Location = new Point(12, 82);
             PressureLabel.Name = "PressureLabel";
-            PressureLabel.Size = new Size(51, 15);
+            PressureLabel.Size = new Size(78, 15);
             PressureLabel.TabIndex = 3;
-            PressureLabel.Text = "Pressure";
+            PressureLabel.Text = "Pressure - PSI";
             // 
             // checkedListBox1
             // 
